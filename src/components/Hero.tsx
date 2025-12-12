@@ -15,11 +15,11 @@ export function Hero() {
           </div>
           
           <h1 className="text-6xl md:text-7xl lg:text-8xl tracking-tight text-slate-900">
-            Alex Martinez
+            Imad Bourouche
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto">
-            Full Stack Software Engineer specializing in building exceptional digital experiences
+            I'm a Software Engineer with a strong focus on backend and full-stack development. Skilled in creating robust, efficient systems using modern tech stacks.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export function Hero() {
 
         <div className="flex items-center justify-center gap-6 pt-8">
           <a
-            href="https://github.com"
+            href="https://github.com/imadbourouche"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-600 hover:text-slate-900 transition-colors"
@@ -51,7 +51,7 @@ export function Hero() {
             <Github className="w-6 h-6" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/imadbourouche"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-600 hover:text-slate-900 transition-colors"
@@ -60,7 +60,7 @@ export function Hero() {
             <Linkedin className="w-6 h-6" />
           </a>
           <a
-            href="mailto:alex@example.com"
+            href="mailto:imad.bourouche.pro@gmail.com"
             className="text-slate-600 hover:text-slate-900 transition-colors"
             aria-label="Email"
           >

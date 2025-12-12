@@ -4,32 +4,27 @@ const skillCategories = [
   {
     title: 'Frontend',
     icon: Layout,
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'Redux']
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS']
   },
   {
     title: 'Backend',
     icon: Server,
-    skills: ['Node.js', 'Python', 'Express', 'FastAPI', 'GraphQL', 'REST APIs']
+    skills: ['Node.js', 'Python', 'Java', 'Spring Boot','Ruby on Rails', 'GraphQL', 'REST APIs']
   },
   {
     title: 'Database',
     icon: Database,
-    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma', 'Supabase', 'Firebase']
-  },
-  {
-    title: 'Mobile',
-    icon: Smartphone,
-    skills: ['React Native', 'Expo', 'iOS', 'Android', 'PWA', 'Responsive Design']
+    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Supabase', 'Firebase']
   },
   {
     title: 'DevOps',
     icon: Wrench,
-    skills: ['Docker', 'AWS', 'CI/CD', 'GitHub Actions', 'Vercel', 'Nginx']
+    skills: ['Docker', 'AWS', 'CI/CD', 'GitHub Actions', 'Vercel', 'Nginx', 'Jenkins', 'Cloudflare']
   },
   {
     title: 'Languages',
     icon: Code2,
-    skills: ['JavaScript', 'TypeScript', 'Python', 'Go', 'SQL', 'HTML/CSS']
+    skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'Ruby', 'Bash','SQL']
   }
 ];
 
@@ -43,7 +38,7 @@ export function Skills() {
             Skills & Technologies
           </h2>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-            A comprehensive toolkit for building modern, scalable applications
+            Tools and technologies I work with
           </p>
         </div>
 
