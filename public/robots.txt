@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://imadbourouche.site/sitemap.xml
