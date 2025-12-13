@@ -9,7 +9,7 @@ export function About() {
             <div className="absolute inset-0 bg-teal-500 rounded-2xl translate-x-4 translate-y-4"></div>
             <div className="relative overflow-hidden rounded-2xl border-4 border-slate-900">
               <ImageWithFallback
-                src="/imad.png"
+                src="/imad.webp"
                 alt="Imad Bourouche"
                 className="w-full h-auto aspect-square object-cover"
               />

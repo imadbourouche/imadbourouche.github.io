@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Redis Implementation in Java',
     description: 'A custom implementation of the Redis key-value store built in Java, featuring core data structure support and TCP networking.',
-    image: '/redis-java.png',
+    image: '/redis-java.webp',
     tags: ['Java', 'Redis', 'TCP/IP', 'Data Structures', 'Pub/Sub'],
     github: 'https://github.com/imadbourouche/redis-java',
     demo: ''
@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Simple Proxy Server',
     description: 'A dedicated forward proxy server written in Python that allows for interception and logging of HTTP requests and responses.',
-    image: '/simple-proxy-server.png',
+    image: '/simple-proxy-server.webp',
     tags: ['Python', 'Networking', 'HTTP', 'Proxy'],
     github: 'https://github.com/imadbourouche/simple_proxy_server',
     demo: ''
@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'QR Code attendance checking system',
     description: 'An interactive application for generating and scanning QR codes using a webcam, designed for event attendance tracking.',
-    image: '/qr-code.png',
+    image: '/qr-code.webp',
     tags: ['Python', 'Computer Vision', 'OpenCV', 'Qt'],
     github: 'https://github.com/imadbourouche/QR_code',
     demo: ''
