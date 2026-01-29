@@ -18,7 +18,7 @@ Recently, I became interested in hosting and owning my own data. I started with 
 
 With Obsidian, I could sync notes across devices using GitHub. However, at work, sharing documentation was often a pain, links would break or permissions would get messy. I wanted a solution that combined the privacy of local files with the ability to share notes publicly on my own domain whenever I wanted.
 
-So, I built this system. *Take a look at [notes.imadbourouche.site](https://notes.imadbourouche.site)*
+So, I built this system. *Take a look at [public note at notes.imadbourouche.site](https://notes.imadbourouche.site/public/Public_note.md)*
 
 ---
 
