@@ -18,7 +18,7 @@ Recently, I became interested in hosting and owning my own data. I started with 
 
 With Obsidian, I could sync notes across devices using GitHub. However, at work, sharing documentation was often a pain, links would break or permissions would get messy. I wanted a solution that combined the privacy of local files with the ability to share notes publicly on my own domain whenever I wanted.
 
-So, I built this system. *Take a look at [notes.imadbourouche.site](https://notes.imadbourouche.site)*
+So, I built this system. *Take a look at [public note at notes.imadbourouche.site](https://notes.imadbourouche.site/public/Public_note.md)*
 
 ---
 
@@ -132,4 +132,5 @@ The system works, but a digital garden is never truly finished. Here is what I�
 
 Building this system was a fun project. Most importantly, I now own my data and i am responsible for it (despite using GitHub as a database 🙂).
 
-If you’re tired of "renting" your data from big platforms, I highly encourage you to try building your own small corner of the web. This is just a first step, but I'll continue to Improving this system and explore ways to own my digital footprint.`;export{e as default};
+If you’re tired of "renting" your data from big platforms, I highly encourage you to try building your own small corner of the web. This is just a first step, but I'll continue to Improving this system and explore ways to own my digital footprint.
+`;export{e as default};
