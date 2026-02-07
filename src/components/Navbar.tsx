@@ -2,21 +2,24 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ModeToggle } from './mode-toggle';
-
-const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Experience', href: '/experience' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
-];
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 export function Navbar() {
+    const { t } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
     const location = useLocation();
     const navigate = useNavigate();
+
+    const navLinks = [
+        { name: t('nav.home'), href: '#home' },
+        { name: t('nav.experience'), href: '/experience' },
+        { name: t('nav.projects'), href: '/projects' },
+        { name: t('nav.blog'), href: '/blog' },
+        { name: t('nav.contact'), href: '/contact' },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -119,8 +122,9 @@ export function Navbar() {
                             ))}
                         </div>
 
-                        {/* Theme Toggle - Desktop */}
-                        <div className="hidden md:block absolute right-0">
+                        {/* Theme Toggle & Language Switcher - Desktop */}
+                        <div className="hidden md:flex items-center gap-2 absolute right-0">
+                            <LanguageSwitcher />
                             <ModeToggle />
                         </div>
 
@@ -162,9 +166,12 @@ export function Navbar() {
                                     {link.name}
                                 </button>
                             ))}
-                            <div className="flex items-center justify-between px-4 py-3 text-slate-600 dark:text-slate-300">
-                                <span>Theme</span>
-                                <ModeToggle />
+                            <div className="flex items-center justify-between px-4 py-3 text-slate-600 dark:text-slate-300 border-t border-slate-100 dark:border-slate-800 mt-2">
+                                <div className="flex items-center gap-4">
+                                    <span>{t('nav.theme')}</span>
+                                    <ModeToggle />
+                                </div>
+                                <LanguageSwitcher />
                             </div>
                         </div>
                     </div>

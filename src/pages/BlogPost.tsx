@@ -8,19 +8,24 @@ import rehypeSlug from 'rehype-slug';
 import { BlogPost as BlogPostType, getPostBySlug } from '../lib/blog';
 import { ArrowLeft, Calendar, Clock, List, X } from 'lucide-react';
 import { format } from 'date-fns';
+import { fr, enUS } from 'date-fns/locale';
+import { useTranslation } from 'react-i18next';
 import 'highlight.js/styles/github-dark-dimmed.css';
 
 export function BlogPost() {
+    const { t, i18n } = useTranslation();
     const { slug } = useParams();
     const [post, setPost] = useState<BlogPostType | null>(null);
     const [activeId, setActiveId] = useState<string>('');
     const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
+    const locale = i18n.language === 'fr' ? fr : enUS;
+
     // 1. Extract headings for ToC
     const toc = useMemo(() => {
         if (!post?.content) return [];
         const headingLines = post.content.split('\n').filter((line) => line.match(/^#{1,3}\s/));
-        
+
         return headingLines.map((line) => {
             const level = line.split('#').length - 1;
             const text = line.replace(/^#+\s/, '').trim();
@@ -32,9 +37,9 @@ export function BlogPost() {
     // 2. Fetch Post
     useEffect(() => {
         if (slug) {
-            getPostBySlug(slug).then(setPost);
+            getPostBySlug(slug, i18n.language).then(setPost);
         }
-    }, [slug]);
+    }, [slug, i18n.language]);
 
     // 3. Scroll Spy Logic
     useEffect(() => {
@@ -70,26 +75,26 @@ export function BlogPost() {
 
     return (
         <article className="min-h-screen pt-32 pb-20 px-6 bg-white dark:bg-slate-900 transition-colors">
-            
+
             {/* --- IMAGE LIGHTBOX --- */}
             {selectedImg && (
-                <div 
+                <div
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md cursor-zoom-out p-4"
                     onClick={() => setSelectedImg(null)}
                 >
                     <button className="absolute top-10 right-10 text-white hover:text-teal-400 transition-colors">
                         <X className="w-8 h-8" />
                     </button>
-                    <img 
-                        src={selectedImg} 
-                        alt="Zoomed" 
+                    <img
+                        src={selectedImg}
+                        alt="Zoomed"
                         className="max-w-full max-h-full rounded-lg shadow-2xl animate-in zoom-in-95 duration-300"
                     />
                 </div>
             )}
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[250px_1fr_250px] gap-12">
-                
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[100px_1fr_250px] gap-12">
+
                 {/* --- LEFT SPACER (Center alignment) --- */}
                 <div className="hidden lg:block" aria-hidden="true"></div>
 
@@ -100,14 +105,14 @@ export function BlogPost() {
                         className="inline-flex items-center text-slate-600 dark:text-slate-400 hover:text-teal-600 group transition-colors"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-                        Back to list
+                        {t('blog.back')}
                     </Link>
 
                     <header className="space-y-6">
                         <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
                             <div className="flex items-center gap-1">
                                 <Calendar className="w-4 h-4" />
-                                <time>{format(new Date(post.date), 'MMMM d, yyyy')}</time>
+                                <time>{format(new Date(post.date), 'MMMM d, yyyy', { locale })}</time>
                             </div>
                             <div className="flex items-center gap-1">
                                 <Clock className="w-4 h-4" />
@@ -168,8 +173,8 @@ export function BlogPost() {
                                             ${heading.level === 1 ? 'pl-4' : ''}
                                             ${heading.level === 2 ? 'pl-6' : ''}
                                             ${heading.level === 3 ? 'pl-10 text-xs' : ''}
-                                            ${isActive 
-                                                ? 'border-teal-600 text-teal-600 font-bold dark:text-teal-400 bg-teal-50/50 dark:bg-teal-900/10' 
+                                            ${isActive
+                                                ? 'border-teal-600 text-teal-600 font-bold dark:text-teal-400 bg-teal-50/50 dark:bg-teal-900/10'
                                                 : 'border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:border-slate-300'
                                             }`}
                                     >

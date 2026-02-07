@@ -1,6 +1,9 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { useTranslation } from 'react-i18next';
 
 export function About() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="py-32 px-6 bg-slate-100 dark:bg-slate-800 transition-colors">
       <div className="max-w-6xl mx-auto">
@@ -18,21 +21,21 @@ export function About() {
 
           <div className="space-y-6">
             <div className="space-y-2">
-              <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">About Me</p>
+              <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">{t('about.title')}</p>
               <h3 className="text-3xl tracking-tight text-slate-900 dark:text-white transition-colors">
-                Turning Complex Problems into Simple Solutions
+                {t('about.subtitle')}
               </h3>
             </div>
 
             <div className="space-y-4 text-slate-600 dark:text-slate-300 text-lg leading-relaxed transition-colors">
               <p>
-                I'm a passionate software engineer with over 3 years of experience in building robust, efficient systems using modern tech stacks. My journey in tech began with a fascination for problem-solving and has evolved into a career dedicated to creating innovative solutions.
+                {t('about.p1')}
               </p>
               <p>
-                I specialize in backend development, cloud architecture, and agile development practices. Whether it's crafting elegant user interfaces or designing robust backend systems, I thrive on turning complex challenges into simple, beautiful solutions.
+                {t('about.p2')}
               </p>
               <p>
-                When I'm not coding, you'll find me contributing to open-source projects or exploring the latest tech trends. I believe in continuous learning and sharing knowledge with the community.
+                {t('about.p3')}
               </p>
             </div>
           </div>

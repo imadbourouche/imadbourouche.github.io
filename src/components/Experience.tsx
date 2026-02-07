@@ -1,66 +1,28 @@
 import { Briefcase, Calendar } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
-const experiences = [
-  {
-    title: 'Full Stack Developer',
-    company: 'INRAE',
-    period: 'Jan 2024 - Present',
-    description: 'Developing and maintaining AgroPortal using Ruby on Rails and Sinatra, based on a modular monolithic architecture.',
-    achievements: [
-      'Refactored legacy code and added 200+ automated tests (Minitest, RSpec) reducing technical debt',
-      'Implemented CI/CD pipelines (GitHub Actions, GitLab CI/CD) increasing release frequency to twice a month',
-      'Dockerized environments accelerating developer onboarding by 80% and standardizing deployments',
-      'Integrated Sentry for monitoring/error tracking, reducing MTTR by 25%',
-      'Optimized backend performance (REST APIs, SPARQL queries, caching, pagination)'
-    ]
-  },
-  {
-    title: 'Full Stack Developer',
-    company: 'Freelance',
-    period: 'Jan 2023 - Present',
-    description: 'Designing and building custom web solutions with a focus on microservices architecture and modern frontend frameworks.',
-    achievements: [
-      'Architected a LinkedIn scraping platform (Lucced.ai) using microservices (Next.js, Nest.js)',
-      'Implemented admin/user dashboards, notification services, and third-party API integrations',
-      'Collaborated remotely using GitHub and project management tools like Notion'
-    ]
-  },
-  {
-    title: 'Odoo Developer',
-    company: 'FINOUTSOURCE',
-    period: 'Jun 2023 - Dec 2023',
-    description: 'Specialized in Odoo ERP customization, deployment, and module development.',
-    achievements: [
-      'Customized and deployed Odoo modules using Python, HTML, XML, and PostgreSQL',
-      'Performed Odoo version migrations ensuring zero data loss and system continuity',
-      'Deployed systems on on-premises servers using Docker',
-      'Developed and integrated a custom payment service connected to the existing Odoo system'
-    ]
-  },
-  {
-    title: 'Backend Developer Intern',
-    company: 'RELEASIN',
-    period: 'May 2022 - Jul 2022',
-    description: 'Contributed to backend architecture and API development during a summer internship.',
-    achievements: [
-      'Collaborated on the architecture and development of scalable REST APIs using Node.js and MongoDB',
-      'Applied software development best practices: TDD, SOLID principles, and Clean Architecture',
-      'Participated in code reviews and team planning sessions'
-    ]
-  }
-];
+interface ExperienceItem {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  achievements: string[];
+}
 
 export function Experience() {
+  const { t } = useTranslation();
+  const experiences = t('experience.jobs', { returnObjects: true }) as ExperienceItem[];
+
   return (
     <section id="experience" className="py-32 px-6 bg-white dark:bg-slate-900 transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-4 mb-20">
-          <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">Career Journey</p>
+          <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">{t('experience.title')}</p>
           <h2 className="text-5xl tracking-tight text-slate-900 dark:text-white transition-colors">
-            Work Experience
+            {t('experience.subtitle')}
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto transition-colors">
-            My professional journey in software engineering and development
+            {t('experience.description')}
           </p>
         </div>
 

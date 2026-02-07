@@ -1,0 +1,156 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "experience": "Expérience",
+        "projects": "Projets",
+        "blog": "Blog",
+        "contact": "Contact",
+        "theme": "Thème"
+    },
+    "hero": {
+        "available": "Disponible pour de nouvelles opportunités",
+        "greeting": "Bonjour, je suis",
+        "description": "Je suis un Ingénieur Logiciel spécialisé en développement backend et full-stack. Expert dans la création de systèmes robustes et efficaces avec des technologies modernes.",
+        "cta": "Télécharger CV"
+    },
+    "about": {
+        "title": "À Propos",
+        "subtitle": "Transformer des problèmes complexes en solutions simples",
+        "p1": "Je suis un ingénieur logiciel passionné avec plus de 3 ans d'expérience dans la création de systèmes robustes et efficaces utilisant des technologies modernes. Mon parcours dans la tech a commencé par une fascination pour la résolution de problèmes et a évolué vers une carrière dédiée à créer des solutions innovantes.",
+        "p2": "Je me spécialise dans le développement backend, l'architecture cloud et les pratiques de développement agile. Que ce soit pour concevoir des interfaces utilisateur élégantes ou des systèmes backend robustes, j'excelle à transformer des défis complexes en solutions simples et élégantes.",
+        "p3": "Quand je ne code pas, vous me trouverez en train de contribuer à des projets open-source ou d'explorer les dernières tendances tech. Je crois en l'apprentissage continu et le partage des connaissances avec la communauté."
+    },
+    "experience": {
+        "title": "Parcours Professionnel",
+        "subtitle": "Expérience Professionnelle",
+        "description": "Mon parcours professionnel en ingénierie logicielle et développement",
+        "jobs": [
+            {
+                "title": "Développeur Full Stack",
+                "company": "INRAE",
+                "period": "Jan 2024 - Présent",
+                "description": "Développement et maintenance d'AgroPortal avec Ruby on Rails et Sinatra, basé sur une architecture monolithique modulaire.",
+                "achievements": [
+                    "Refactorisation du code legacy et ajout de 200+ tests automatisés (Minitest, RSpec) réduisant la dette technique",
+                    "Implémentation de pipelines CI/CD (GitHub Actions, GitLab CI/CD) augmentant la fréquence de release à deux fois par mois",
+                    "Dockerisation des environnements accélérant l'onboarding des développeurs de 80% et standardisant les déploiements",
+                    "Intégration de Sentry pour le monitoring/tracking d'erreurs, réduisant le MTTR de 25%",
+                    "Optimisation des performances backend (APIs REST, requêtes SPARQL, caching, pagination)"
+                ]
+            },
+            {
+                "title": "Développeur Full Stack",
+                "company": "Freelance",
+                "period": "Jan 2023 - Présent",
+                "description": "Conception et développement de solutions web personnalisées avec un focus sur l'architecture microservices et les frameworks frontend modernes.",
+                "achievements": [
+                    "Conception d'une plateforme de scraping LinkedIn (Lucced.ai) utilisant les microservices (Next.js, Nest.js)",
+                    "Implémentation de dashboards admin/utilisateur, services de notifications et intégrations d'APIs tierces",
+                    "Collaboration à distance utilisant GitHub et des outils de gestion de projet comme Notion"
+                ]
+            },
+            {
+                "title": "Développeur Odoo",
+                "company": "FINOUTSOURCE",
+                "period": "Juin 2023 - Déc 2023",
+                "description": "Spécialisé dans la personnalisation, le déploiement et le développement de modules Odoo ERP.",
+                "achievements": [
+                    "Personnalisation et déploiement de modules Odoo utilisant Python, HTML, XML et PostgreSQL",
+                    "Réalisation de migrations de versions Odoo assurant zéro perte de données et continuité du système",
+                    "Déploiement de systèmes sur serveurs on-premises utilisant Docker",
+                    "Développement et intégration d'un service de paiement personnalisé connecté au système Odoo existant"
+                ]
+            },
+            {
+                "title": "Stagiaire Développeur Backend",
+                "company": "RELEASIN",
+                "period": "Mai 2022 - Juil 2022",
+                "description": "Contribution à l'architecture backend et au développement d'APIs lors d'un stage d'été.",
+                "achievements": [
+                    "Collaboration sur l'architecture et le développement d'APIs REST scalables utilisant Node.js et MongoDB",
+                    "Application des bonnes pratiques de développement logiciel : TDD, principes SOLID et Clean Architecture",
+                    "Participation aux revues de code et sessions de planification d'équipe"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Portfolio",
+        "subtitle": "Projets Phares",
+        "description": "Une sélection de projets sur lesquels j'ai travaillé",
+        "professional": "Professionnel",
+        "personal": "Personnel",
+        "website": "Site Web",
+        "code": "Code",
+        "demo": "Démo",
+        "items": [
+            {
+                "title": "OntoPortal",
+                "description": "OntoPortal est une plateforme open-source pour la gestion et la publication de données sémantiques et d'ontologies. Elle fournit une interface web et des APIs REST pour stocker, visualiser et rechercher des données structurées. Supporte le versioning d'ontologies, la gestion de métadonnées et des capacités de recherche avancées. Déployée dans plus de 10 organisations à travers 6 pays.",
+                "category": "professional"
+            },
+            {
+                "title": "Luceed.ai",
+                "description": "Une plateforme de scraping et d'automatisation LinkedIn architecturée en microservices. Développée en freelance, elle inclut des dashboards admin/utilisateur complexes, des services de notifications en temps réel et des intégrations robustes d'APIs tierces.",
+                "category": "professional"
+            },
+            {
+                "title": "Implémentation Redis en Java",
+                "description": "Une implémentation personnalisée du magasin clé-valeur Redis construite en Java, avec support des structures de données de base et réseau TCP.",
+                "category": "personal"
+            },
+            {
+                "title": "Serveur Proxy Simple",
+                "description": "Un serveur proxy forward dédié écrit en Python permettant l'interception et la journalisation des requêtes et réponses HTTP.",
+                "category": "personal"
+            },
+            {
+                "title": "Système de pointage par QR Code",
+                "description": "Une application interactive pour générer et scanner des QR codes avec une webcam, conçue pour le suivi de présence aux événements.",
+                "category": "personal"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Expertise Technique",
+        "subtitle": "Compétences & Technologies",
+        "description": "Outils et technologies avec lesquels je travaille",
+        "categories": {
+            "Backend": "Backend",
+            "Frontend": "Frontend",
+            "Databases": "Bases de données",
+            "DevOps": "DevOps",
+            "Tools": "Outils"
+        }
+    },
+    "contact": {
+        "title": "Me Contacter",
+        "subtitle": "Travaillons Ensemble",
+        "description": "Vous avez un projet en tête ou souhaitez discuter d'opportunités ? J'aimerais beaucoup vous entendre.",
+        "info_title": "Coordonnées",
+        "email": "Email",
+        "location": "Localisation",
+        "location_val": "Montpellier, France",
+        "social": "Réseaux Sociaux",
+        "form": {
+            "name": "Nom",
+            "name_ph": "Votre nom",
+            "email": "Email",
+            "email_ph": "votre.email@exemple.com",
+            "subject": "Sujet",
+            "subject_ph": "Comment puis-je vous aider ?",
+            "message": "Message",
+            "message_ph": "Parlez-moi de votre projet...",
+            "send": "Envoyer le message"
+        },
+        "footer": "© 2025 Imad Bourouche. Tous droits réservés."
+    },
+    "blog": {
+        "title": "Articles & Réflexions",
+        "subtitle": "Réflexions sur l'ingénierie logicielle, la conception de systèmes et les dernières technologies web.",
+        "back": "Retour à la liste",
+        "toc": "Table des matières",
+        "empty_title": "Rédaction en cours",
+        "empty_description": "Je prépare actuellement des articles intéressants. Revenez bientôt !"
+    }
+}

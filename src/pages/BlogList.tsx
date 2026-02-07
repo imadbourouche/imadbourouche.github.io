@@ -1,29 +1,35 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BlogPost, getAllPosts } from '../lib/blog';
+import { BlogPost, getPostsByLanguage } from '../lib/blog';
 import { Clock, Calendar, PenTool } from 'lucide-react';
 import { format } from 'date-fns';
+import { fr, enUS } from 'date-fns/locale';
+import { useTranslation } from 'react-i18next';
 
 export function BlogList() {
+    const { t, i18n } = useTranslation();
     const [posts, setPosts] = useState<BlogPost[]>([]);
     const [loading, setLoading] = useState(true);
 
+    const locale = i18n.language === 'fr' ? fr : enUS;
+
     useEffect(() => {
-        getAllPosts().then((data) => {
+        setLoading(true);
+        getPostsByLanguage(i18n.language).then((data) => {
             setPosts(data);
             setLoading(false);
         });
-    }, []);
+    }, [i18n.language]);
 
     return (
         <div className="min-h-screen pt-32 pb-20 px-6 bg-slate-50 dark:bg-slate-900 transition-colors">
             <div className="max-w-3xl mx-auto space-y-12">
                 <div className="text-center space-y-4">
                     <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight transition-colors">
-                        Writing & Thoughts
+                        {t('blog.title')}
                     </h1>
                     <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto transition-colors">
-                        Thoughts on software engineering, system design, and the latest web technologies.
+                        {t('blog.subtitle')}
                     </p>
                 </div>
 
@@ -43,7 +49,7 @@ export function BlogList() {
                                     <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400 transition-colors">
                                         <div className="flex items-center gap-1">
                                             <Calendar className="w-3.5 h-3.5" />
-                                            <time>{format(new Date(post.date), 'MMM d, yyyy')}</time>
+                                            <time>{format(new Date(post.date), 'MMM d, yyyy', { locale })}</time>
                                         </div>
                                         <div className="flex items-center gap-1">
                                             <Clock className="w-3.5 h-3.5" />
@@ -77,9 +83,9 @@ export function BlogList() {
                                 <PenTool className="w-8 h-8" />
                             </div>
                             <div className="space-y-2">
-                                <h3 className="text-xl font-medium text-slate-900 dark:text-white transition-colors">Writing in Progress</h3>
+                                <h3 className="text-xl font-medium text-slate-900 dark:text-white transition-colors">{t('blog.empty_title')}</h3>
                                 <p className="text-slate-600 dark:text-slate-400 max-w-sm mx-auto transition-colors">
-                                    I'm currently crafting some interesting articles. Check back soon for updates!
+                                    {t('blog.empty_description')}
                                 </p>
                             </div>
                         </div>
@@ -89,3 +95,4 @@ export function BlogList() {
         </div>
     );
 }
+

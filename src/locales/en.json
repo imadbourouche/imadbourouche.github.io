@@ -1,0 +1,156 @@
+{
+    "nav": {
+        "home": "Home",
+        "experience": "Experience",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact",
+        "theme": "Theme"
+    },
+    "hero": {
+        "available": "Available for new opportunities",
+        "greeting": "Hi, I'm",
+        "description": "I'm a Software Engineer with a strong focus on backend and full-stack development. Skilled in creating robust, efficient systems using modern tech stacks.",
+        "cta": "Download CV"
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "Turning Complex Problems into Simple Solutions",
+        "p1": "I'm a passionate software engineer with over 3 years of experience in building robust, efficient systems using modern tech stacks. My journey in tech began with a fascination for problem-solving and has evolved into a career dedicated to creating innovative solutions.",
+        "p2": "I specialize in backend development, cloud architecture, and agile development practices. Whether it's crafting elegant user interfaces or designing robust backend systems, I thrive on turning complex challenges into simple, beautiful solutions.",
+        "p3": "When I'm not coding, you'll find me contributing to open-source projects or exploring the latest tech trends. I believe in continuous learning and sharing knowledge with the community."
+    },
+    "experience": {
+        "title": "Career Journey",
+        "subtitle": "Work Experience",
+        "description": "My professional journey in software engineering and development",
+        "jobs": [
+            {
+                "title": "Full Stack Developer",
+                "company": "INRAE",
+                "period": "Jan 2024 - Present",
+                "description": "Developing and maintaining AgroPortal using Ruby on Rails and Sinatra, based on a modular monolithic architecture.",
+                "achievements": [
+                    "Refactored legacy code and added 200+ automated tests (Minitest, RSpec) reducing technical debt",
+                    "Implemented CI/CD pipelines (GitHub Actions, GitLab CI/CD) increasing release frequency to twice a month",
+                    "Dockerized environments accelerating developer onboarding by 80% and standardizing deployments",
+                    "Integrated Sentry for monitoring/error tracking, reducing MTTR by 25%",
+                    "Optimized backend performance (REST APIs, SPARQL queries, caching, pagination)"
+                ]
+            },
+            {
+                "title": "Full Stack Developer",
+                "company": "Freelance",
+                "period": "Jan 2023 - Present",
+                "description": "Designing and building custom web solutions with a focus on microservices architecture and modern frontend frameworks.",
+                "achievements": [
+                    "Architected a LinkedIn scraping platform (Lucced.ai) using microservices (Next.js, Nest.js)",
+                    "Implemented admin/user dashboards, notification services, and third-party API integrations",
+                    "Collaborated remotely using GitHub and project management tools like Notion"
+                ]
+            },
+            {
+                "title": "Odoo Developer",
+                "company": "FINOUTSOURCE",
+                "period": "Jun 2023 - Dec 2023",
+                "description": "Specialized in Odoo ERP customization, deployment, and module development.",
+                "achievements": [
+                    "Customized and deployed Odoo modules using Python, HTML, XML, and PostgreSQL",
+                    "Performed Odoo version migrations ensuring zero data loss and system continuity",
+                    "Deployed systems on on-premises servers using Docker",
+                    "Developed and integrated a custom payment service connected to the existing Odoo system"
+                ]
+            },
+            {
+                "title": "Backend Developer Intern",
+                "company": "RELEASIN",
+                "period": "May 2022 - Jul 2022",
+                "description": "Contributed to backend architecture and API development during a summer internship.",
+                "achievements": [
+                    "Collaborated on the architecture and development of scalable REST APIs using Node.js and MongoDB",
+                    "Applied software development best practices: TDD, SOLID principles, and Clean Architecture",
+                    "Participated in code reviews and team planning sessions"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Portfolio",
+        "subtitle": "Featured Projects",
+        "description": "A selection of projects that I worked on",
+        "professional": "Professional",
+        "personal": "Personal",
+        "website": "Website",
+        "code": "Code",
+        "demo": "Demo",
+        "items": [
+            {
+                "title": "OntoPortal",
+                "description": "OntoPortal is an open-source platform for managing and publishing semantic data and ontologies. It provides a web interface and REST APIs for storing, visualizing, and searching structured data. Supports ontology versioning, metadata management, and advanced search capabilities. Deployed in over 10 organizations across 6 countries, serving diverse domains.",
+                "category": "professional"
+            },
+            {
+                "title": "Luceed.ai",
+                "description": "A LinkedIn scraping and automation platform architected using microservices. Developed as a freelance project, it includes complex admin/user dashboards, real-time notification services, and robust third-party API integrations.",
+                "category": "professional"
+            },
+            {
+                "title": "Redis Implementation in Java",
+                "description": "A custom implementation of the Redis key-value store built in Java, featuring core data structure support and TCP networking.",
+                "category": "personal"
+            },
+            {
+                "title": "Simple Proxy Server",
+                "description": "A dedicated forward proxy server written in Python that allows for interception and logging of HTTP requests and responses.",
+                "category": "personal"
+            },
+            {
+                "title": "QR Code attendance checking system",
+                "description": "An interactive application for generating and scanning QR codes using a webcam, designed for event attendance tracking.",
+                "category": "personal"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Technical Expertise",
+        "subtitle": "Skills & Technologies",
+        "description": "Tools and technologies I work with",
+        "categories": {
+            "Backend": "Backend",
+            "Frontend": "Frontend",
+            "Databases": "Databases",
+            "DevOps": "DevOps",
+            "Tools": "Tools"
+        }
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "subtitle": "Let's Work Together",
+        "description": "Have a project in mind or want to discuss opportunities? I'd love to hear from you.",
+        "info_title": "Contact Information",
+        "email": "Email",
+        "location": "Location",
+        "location_val": "Montpellier, France",
+        "social": "Social Links",
+        "form": {
+            "name": "Name",
+            "name_ph": "Your name",
+            "email": "Email",
+            "email_ph": "your.email@example.com",
+            "subject": "Subject",
+            "subject_ph": "How can I help you?",
+            "message": "Message",
+            "message_ph": "Tell me about your project...",
+            "send": "Send Message"
+        },
+        "footer": "© 2025 Imad Bourouche. All rights reserved."
+    },
+    "blog": {
+        "title": "Writing & Thoughts",
+        "subtitle": "Thoughts on software engineering, system design, and the latest web technologies.",
+        "back": "Back to list",
+        "toc": "Table of Contents",
+        "empty_title": "Writing in Progress",
+        "empty_description": "I'm currently crafting some interesting articles. Check back soon for updates!"
+    }
+}

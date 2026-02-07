@@ -38,7 +38,7 @@ Building tools is fun. Implementing a system that handles Markdown parsing, GitH
 
 ---
 
-## Technical Implementation: How It Works
+## Technical Implementation
 
 I wanted this notes-sharing system to be as simple as possible. The system is designed to be "serverless" and lightweight. I wanted to be able to edit a note on my phone or laptop, have my website update automatically, and easily share notes with the public.
 

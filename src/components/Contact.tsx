@@ -1,6 +1,8 @@
 import { Mail, Linkedin, Github, Twitter, Send, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function Contact() {
+  const { t } = useTranslation();
   // NOTE: We are removing useState, handleChange, and handleSubmit
   // as the form submission is now handled by the browser's native POST
   // action pointing to FormSubmit.co
@@ -9,12 +11,12 @@ export function Contact() {
     <section id="contact" className="py-32 px-6 bg-white dark:bg-slate-900 transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-4 mb-20">
-          <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">Get In Touch</p>
+          <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">{t('contact.title')}</p>
           <h2 className="text-5xl tracking-tight text-slate-900 dark:text-white transition-colors">
-            Let's Work Together
+            {t('contact.subtitle')}
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto transition-colors">
-            Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+            {t('contact.description')}
           </p>
         </div>
 
@@ -23,7 +25,7 @@ export function Contact() {
           <div className="md:col-span-2 space-y-8">
             <div>
               <h3 className="text-2xl text-slate-900 dark:text-white mb-6 transition-colors">
-                Contact Information
+                {t('contact.info_title')}
               </h3>
 
               <div className="space-y-6">
@@ -32,7 +34,7 @@ export function Contact() {
                     <Mail className="w-5 h-5 text-teal-600 dark:text-teal-400" />
                   </div>
                   <div>
-                    <p className="text-slate-500 dark:text-slate-400 text-sm mb-1">Email</p>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm mb-1">{t('contact.email')}</p>
                     <a href="mailto:imad.bourouche.pro@gmail.com" className="text-slate-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
                       imad.bourouche.pro@gmail.com
                     </a>
@@ -44,8 +46,8 @@ export function Contact() {
                     <MapPin className="w-5 h-5 text-teal-600 dark:text-teal-400" />
                   </div>
                   <div>
-                    <p className="text-slate-500 dark:text-slate-400 text-sm mb-1">Location</p>
-                    <p className="text-slate-900 dark:text-white transition-colors">Montpellier, France</p>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm mb-1">{t('contact.location')}</p>
+                    <p className="text-slate-900 dark:text-white transition-colors">{t('contact.location_val')}</p>
                   </div>
                 </div>
               </div>
@@ -53,7 +55,7 @@ export function Contact() {
 
             <div>
               <h3 className="text-xl text-slate-900 dark:text-white mb-4 transition-colors">
-                Social Links
+                {t('contact.social')}
               </h3>
 
               <div className="flex gap-4">
@@ -103,7 +105,7 @@ export function Contact() {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-slate-900 dark:text-white mb-2 transition-colors">
-                    Name *
+                    {t('contact.form.name')} *
                   </label>
                   <input
                     type="text"
@@ -111,13 +113,13 @@ export function Contact() {
                     name="name" // IMPORTANT: The `name` attribute is what FormSubmit uses
                     required
                     className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 dark:text-white rounded-xl focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                    placeholder="Your name"
+                    placeholder={t('contact.form.name_ph')}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-slate-900 dark:text-white mb-2 transition-colors">
-                    Email *
+                    {t('contact.form.email')} *
                   </label>
                   <input
                     type="email"
@@ -125,14 +127,14 @@ export function Contact() {
                     name="email" // IMPORTANT
                     required
                     className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 dark:text-white rounded-xl focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                    placeholder="your.email@example.com"
+                    placeholder={t('contact.form.email_ph')}
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="subject" className="block text-slate-900 dark:text-white mb-2 transition-colors">
-                  Subject *
+                  {t('contact.form.subject')} *
                 </label>
                 <input
                   type="text"
@@ -140,13 +142,13 @@ export function Contact() {
                   name="subject" // IMPORTANT
                   required
                   className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 dark:text-white rounded-xl focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                  placeholder="How can I help you?"
+                  placeholder={t('contact.form.subject_ph')}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-slate-900 dark:text-white mb-2 transition-colors">
-                  Message *
+                  {t('contact.form.message')} *
                 </label>
                 <textarea
                   id="message"
@@ -154,7 +156,7 @@ export function Contact() {
                   required
                   rows={6}
                   className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 dark:text-white rounded-xl focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all resize-none placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                  placeholder="Tell me about your project..."
+                  placeholder={t('contact.form.message_ph')}
                 />
               </div>
 
@@ -162,7 +164,7 @@ export function Contact() {
                 type="submit"
                 className="w-full sm:w-auto px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl hover:bg-teal-600 dark:hover:bg-slate-200 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
               >
-                Send Message
+                {t('contact.form.send')}
                 <Send className="w-5 h-5" />
               </button>
             </form>
@@ -173,7 +175,7 @@ export function Contact() {
       {/* Footer */}
       <div className="max-w-6xl mx-auto mt-32 pt-12 border-t border-slate-200 dark:border-slate-800 transition-colors">
         <div className="text-center text-slate-600 dark:text-slate-400 transition-colors">
-          <p>© 2025 Imad Bourouche. All rights reserved.</p>
+          <p>{t('contact.footer')}</p>
         </div>
       </div>
     </section>

@@ -1,44 +1,38 @@
 import { useState } from 'react';
 import { ExternalLink, Github, Monitor, Code2 } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { useTranslation } from 'react-i18next';
 
 const projects = [
   {
-    title: 'OntoPortal',
-    description: 'OntoPortal is an open-source platform for managing and publishing semantic data and ontologies. It provides a web interface and REST APIs for storing, visualizing, and searching structured data. Supports ontology versioning, metadata management, and advanced search capabilities. Deployed in over 10 organizations across 6 countries, serving diverse domains.',
-    image: '',
+    titleKey: 'OntoPortal',
     tags: ['Ruby on Rails', 'Hotwire', 'Redis', 'NoSQL', 'Solr', 'Sidekiq'],
     github: 'https://ontoportal.org',
     demo: '',
     category: 'professional'
   },
   {
-    title: 'Luceed.ai',
-    description: 'A LinkedIn scraping and automation platform architected using microservices. Developed as a freelance project, it includes complex admin/user dashboards, real-time notification services, and robust third-party API integrations.',
+    titleKey: 'Luceed.ai',
     tags: ['Next.js', 'Nest.js', 'Microservices', 'PostgreSQL', 'Redis'],
     github: 'https://luceed.ai',
     demo: '',
     category: 'professional'
   },
   {
-    title: 'Redis Implementation in Java',
-    description: 'A custom implementation of the Redis key-value store built in Java, featuring core data structure support and TCP networking.',
+    titleKey: 'Redis Implementation in Java',
     tags: ['Java', 'Redis', 'TCP/IP', 'Data Structures', 'Pub/Sub'],
     github: 'https://github.com/imadbourouche/redis-java',
     demo: '',
     category: 'personal'
   },
   {
-    title: 'Simple Proxy Server',
-    description: 'A dedicated forward proxy server written in Python that allows for interception and logging of HTTP requests and responses.',
+    titleKey: 'Simple Proxy Server',
     tags: ['Python', 'Networking', 'HTTP', 'Proxy'],
     github: 'https://github.com/imadbourouche/simple_proxy_server',
     demo: '',
     category: 'personal'
   },
   {
-    title: 'QR Code attendance checking system',
-    description: 'An interactive application for generating and scanning QR codes using a webcam, designed for event attendance tracking.',
+    titleKey: 'QR Code attendance checking system',
     tags: ['Python', 'Computer Vision', 'OpenCV', 'Qt'],
     github: 'https://github.com/imadbourouche/QR_code',
     demo: '',
@@ -46,12 +40,28 @@ const projects = [
   }
 ];
 
+interface ProjectItem {
+  title: string;
+  description: string;
+  category: string;
+}
+
 export function Projects() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<'professional' | 'personal'>('professional');
 
+  const projectItems = t('projects.items', { returnObjects: true }) as ProjectItem[];
+
+  // Merge translation data with static project data (tags, links)
+  const mergedProjects = projects.map((p, i) => ({
+    ...p,
+    title: projectItems[i]?.title || p.titleKey,
+    description: projectItems[i]?.description || '',
+  }));
+
   const filteredProjects = activeTab === 'professional'
-    ? projects.filter(p => p.category === 'professional')
-    : projects.filter(p => p.category === 'personal');
+    ? mergedProjects.filter(p => p.category === 'professional')
+    : mergedProjects.filter(p => p.category === 'personal');
 
 
   const cols =
@@ -65,12 +75,12 @@ export function Projects() {
     <section id="projects" className="py-32 px-6 bg-white dark:bg-slate-900 transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-4 mb-20">
-          <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">Portfolio</p>
+          <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">{t('projects.title')}</p>
           <h2 className="text-5xl tracking-tight text-slate-900 dark:text-white transition-colors">
-            Featured Projects
+            {t('projects.subtitle')}
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto transition-colors">
-            A selection of projects that i worked on
+            {t('projects.description')}
           </p>
         </div>
 
@@ -85,7 +95,7 @@ export function Projects() {
                 }`}
             >
               <Monitor className="w-4 h-4" />
-              Professional
+              {t('projects.professional')}
             </button>
             <button
               onClick={() => setActiveTab('personal')}
@@ -95,7 +105,7 @@ export function Projects() {
                 }`}
             >
               <Code2 className="w-4 h-4" />
-              Personal
+              {t('projects.personal')}
             </button>
           </div>
         </div>
@@ -143,7 +153,7 @@ export function Projects() {
                     className="flex-1 inline-flex justify-center items-center gap-2 px-4 py-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors text-sm font-medium"
                   >
                     <Github className="w-4 h-4" />
-                    {project.category === 'professional' ? 'Website' : 'Code'}
+                    {project.category === 'professional' ? t('projects.website') : t('projects.code')}
                   </a>
                   {project.demo && (
                     <a
