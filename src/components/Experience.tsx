@@ -17,7 +17,6 @@ export function Experience() {
     <section id="experience" className="py-32 px-6 bg-white dark:bg-slate-900 transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-4 mb-20">
-          <p className="text-teal-600 dark:text-teal-400 tracking-wider uppercase text-sm">{t('experience.title')}</p>
           <h2 className="text-5xl tracking-tight text-slate-900 dark:text-white transition-colors">
             {t('experience.subtitle')}
           </h2>

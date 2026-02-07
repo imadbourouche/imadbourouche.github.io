@@ -13,15 +13,7 @@
         "description": "I'm a Software Engineer with a strong focus on backend and full-stack development. Skilled in creating robust, efficient systems using modern tech stacks.",
         "cta": "Download CV"
     },
-    "about": {
-        "title": "About Me",
-        "subtitle": "Turning Complex Problems into Simple Solutions",
-        "p1": "I'm a passionate software engineer with over 3 years of experience in building robust, efficient systems using modern tech stacks. My journey in tech began with a fascination for problem-solving and has evolved into a career dedicated to creating innovative solutions.",
-        "p2": "I specialize in backend development, cloud architecture, and agile development practices. Whether it's crafting elegant user interfaces or designing robust backend systems, I thrive on turning complex challenges into simple, beautiful solutions.",
-        "p3": "When I'm not coding, you'll find me contributing to open-source projects or exploring the latest tech trends. I believe in continuous learning and sharing knowledge with the community."
-    },
     "experience": {
-        "title": "Career Journey",
         "subtitle": "Work Experience",
         "description": "My professional journey in software engineering and development",
         "jobs": [
@@ -75,8 +67,7 @@
         ]
     },
     "projects": {
-        "title": "Portfolio",
-        "subtitle": "Featured Projects",
+        "subtitle": "Portfolio",
         "description": "A selection of projects that I worked on",
         "professional": "Professional",
         "personal": "Personal",
@@ -96,7 +87,7 @@
             },
             {
                 "title": "Redis Implementation in Java",
-                "description": "A custom implementation of the Redis key-value store built in Java, featuring core data structure support and TCP networking.",
+                "description": "A custom implementation of redis built in Java, featuring core data structure support and TCP networking.",
                 "category": "personal"
             },
             {
@@ -111,21 +102,8 @@
             }
         ]
     },
-    "skills": {
-        "title": "Technical Expertise",
-        "subtitle": "Skills & Technologies",
-        "description": "Tools and technologies I work with",
-        "categories": {
-            "Backend": "Backend",
-            "Frontend": "Frontend",
-            "Databases": "Databases",
-            "DevOps": "DevOps",
-            "Tools": "Tools"
-        }
-    },
     "contact": {
-        "title": "Get In Touch",
-        "subtitle": "Let's Work Together",
+        "subtitle": "Get In Touch",
         "description": "Have a project in mind or want to discuss opportunities? I'd love to hear from you.",
         "info_title": "Contact Information",
         "email": "Email",
@@ -146,8 +124,8 @@
         "footer": "© 2025 Imad Bourouche. All rights reserved."
     },
     "blog": {
-        "title": "Writing & Thoughts",
-        "subtitle": "Thoughts on software engineering, system design, and the latest web technologies.",
+        "title": "Writing",
+        "subtitle": "Some thoughts on software engineering, system design, and the latest web technologies.",
         "back": "Back to list",
         "toc": "Table of Contents",
         "empty_title": "Writing in Progress",

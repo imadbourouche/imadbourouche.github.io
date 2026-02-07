@@ -13,15 +13,7 @@
         "description": "Je suis un Ingénieur Logiciel spécialisé en développement backend et full-stack. Expert dans la création de systèmes robustes et efficaces avec des technologies modernes.",
         "cta": "Télécharger CV"
     },
-    "about": {
-        "title": "À Propos",
-        "subtitle": "Transformer des problèmes complexes en solutions simples",
-        "p1": "Je suis un ingénieur logiciel passionné avec plus de 3 ans d'expérience dans la création de systèmes robustes et efficaces utilisant des technologies modernes. Mon parcours dans la tech a commencé par une fascination pour la résolution de problèmes et a évolué vers une carrière dédiée à créer des solutions innovantes.",
-        "p2": "Je me spécialise dans le développement backend, l'architecture cloud et les pratiques de développement agile. Que ce soit pour concevoir des interfaces utilisateur élégantes ou des systèmes backend robustes, j'excelle à transformer des défis complexes en solutions simples et élégantes.",
-        "p3": "Quand je ne code pas, vous me trouverez en train de contribuer à des projets open-source ou d'explorer les dernières tendances tech. Je crois en l'apprentissage continu et le partage des connaissances avec la communauté."
-    },
     "experience": {
-        "title": "Parcours Professionnel",
         "subtitle": "Expérience Professionnelle",
         "description": "Mon parcours professionnel en ingénierie logicielle et développement",
         "jobs": [
@@ -75,8 +67,7 @@
         ]
     },
     "projects": {
-        "title": "Portfolio",
-        "subtitle": "Projets Phares",
+        "subtitle": "Portfolio",
         "description": "Une sélection de projets sur lesquels j'ai travaillé",
         "professional": "Professionnel",
         "personal": "Personnel",
@@ -96,7 +87,7 @@
             },
             {
                 "title": "Implémentation Redis en Java",
-                "description": "Une implémentation personnalisée du magasin clé-valeur Redis construite en Java, avec support des structures de données de base et réseau TCP.",
+                "description": "Une implémentation personnalisée de redis construite en Java, avec support des structures de données de base et réseau TCP.",
                 "category": "personal"
             },
             {
@@ -111,21 +102,8 @@
             }
         ]
     },
-    "skills": {
-        "title": "Expertise Technique",
-        "subtitle": "Compétences & Technologies",
-        "description": "Outils et technologies avec lesquels je travaille",
-        "categories": {
-            "Backend": "Backend",
-            "Frontend": "Frontend",
-            "Databases": "Bases de données",
-            "DevOps": "DevOps",
-            "Tools": "Outils"
-        }
-    },
     "contact": {
-        "title": "Me Contacter",
-        "subtitle": "Travaillons Ensemble",
+        "subtitle": "Me Contacter",
         "description": "Vous avez un projet en tête ou souhaitez discuter d'opportunités ? J'aimerais beaucoup vous entendre.",
         "info_title": "Coordonnées",
         "email": "Email",
@@ -146,8 +124,8 @@
         "footer": "© 2025 Imad Bourouche. Tous droits réservés."
     },
     "blog": {
-        "title": "Articles & Réflexions",
-        "subtitle": "Réflexions sur l'ingénierie logicielle, la conception de systèmes et les dernières technologies web.",
+        "title": "Articles",
+        "subtitle": "Quelques réflexions sur l'ingénierie logicielle, la conception de systèmes et les dernières technologies web.",
         "back": "Retour à la liste",
         "toc": "Table des matières",
         "empty_title": "Rédaction en cours",

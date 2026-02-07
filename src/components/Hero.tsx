@@ -16,7 +16,7 @@ export function Hero() {
             <span className="text-sm">{t('hero.available')}</span>
           </div>
 
-          <h1 className="text-6xl md:text-7xl lg:text-8xl tracking-tight text-slate-900 dark:text-white transition-colors">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight text-slate-900 dark:text-white transition-colors">
             {t('hero.greeting')} Imad Bourouche
           </h1>
 
