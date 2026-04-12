@@ -18,6 +18,13 @@ const projects = [
     category: 'professional'
   },
   {
+    titleKey: 'CursorMate',
+    tags: ['JavaScript', 'Chrome Extension', 'Manifest V3', 'OpenAI API'],
+    github: 'https://github.com/imadbourouche/CursorMate',
+    demo: '',
+    category: 'personal'
+  },
+  {
     titleKey: 'Redis Implementation in Java',
     tags: ['Java', 'Redis', 'TCP/IP', 'Data Structures', 'Pub/Sub'],
     github: 'https://github.com/imadbourouche/redis-java',

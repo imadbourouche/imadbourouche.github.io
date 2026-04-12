@@ -20,7 +20,7 @@
             {
                 "title": "Full Stack Developer",
                 "company": "INRAE",
-                "period": "Jan 2024 - Present",
+                "period": "Jan 2024 - Mar 2026",
                 "description": "Developing and maintaining AgroPortal using Ruby on Rails and Sinatra, based on a modular monolithic architecture.",
                 "achievements": [
                     "Refactored legacy code and added 200+ automated tests (Minitest, RSpec) reducing technical debt",
@@ -84,6 +84,11 @@
                 "title": "Luceed.ai",
                 "description": "A LinkedIn scraping and automation platform architected using microservices. Developed as a freelance project, it includes complex admin/user dashboards, real-time notification services, and robust third-party API integrations.",
                 "category": "professional"
+            },
+            {
+                "title": "CursorMate",
+                "description": "A Chrome extension that lets you select text on any webpage and instantly get AI-powered responses — explanations, summaries, translations, and custom prompts via configurable AI models.",
+                "category": "personal"
             },
             {
                 "title": "Redis Implementation in Java",
