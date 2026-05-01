@@ -8,7 +8,6 @@
         "theme": "Theme"
     },
     "hero": {
-        "available": "Available for new opportunities",
         "greeting": "Hi, I'm",
         "description": "I'm a Software Engineer with a strong focus on backend and full-stack development. Skilled in creating robust, efficient systems using modern tech stacks.",
         "cta": "Download CV"
@@ -17,6 +16,13 @@
         "subtitle": "Work Experience",
         "description": "My professional journey in software engineering and development",
         "jobs": [
+            {
+                "title": "Full Stack Developer",
+                "company": "TIPSI",
+                "period": "Apr 2026 - Present",
+                "description": "Tipping by credit card. Tipsi makes it easy to collect and manage tips on your payment terminal.",
+                "achievements": []
+            },
             {
                 "title": "Full Stack Developer",
                 "company": "INRAE",

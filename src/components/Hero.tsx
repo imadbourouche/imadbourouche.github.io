@@ -11,11 +11,6 @@ export function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center px-6 py-20 bg:white dark:bg-slate-900 transition-colors">
       <div className="max-w-4xl w-full text-center space-y-8">
         <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 text-teal-700 rounded-full border border-teal-200 dark:bg-teal-900/30 dark:text-teal-300 dark:border-teal-800">
-            <span className="w-2 h-2 bg-teal-500 rounded-full animate-pulse"></span>
-            <span className="text-sm">{t('hero.available')}</span>
-          </div>
-
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight text-slate-900 dark:text-white transition-colors">
             {t('hero.greeting')} Imad Bourouche
           </h1>

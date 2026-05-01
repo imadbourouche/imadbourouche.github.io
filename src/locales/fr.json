@@ -8,7 +8,6 @@
         "theme": "Thème"
     },
     "hero": {
-        "available": "Disponible pour de nouvelles opportunités",
         "greeting": "Bonjour, je suis",
         "description": "Je suis un Ingénieur Logiciel spécialisé en développement backend et full-stack. Expert dans la création de systèmes robustes et efficaces avec des technologies modernes.",
         "cta": "Télécharger CV"
@@ -17,6 +16,13 @@
         "subtitle": "Expérience Professionnelle",
         "description": "Mon parcours professionnel en ingénierie logicielle et développement",
         "jobs": [
+            {
+                "title": "Développeur Full Stack",
+                "company": "TIPSI",
+                "period": "Avr 2026 - Présent",
+                "description": "Le pourboire par carte bancaire. Tipsi permet de collecter et gérer les pourboires facilement sur votre terminal de paiement.",
+                "achievements": []
+            },
             {
                 "title": "Développeur Full Stack",
                 "company": "INRAE",
