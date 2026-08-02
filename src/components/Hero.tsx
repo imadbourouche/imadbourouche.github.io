@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Eye, Github, Linkedin, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export function Hero() {
@@ -22,12 +22,12 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <a
-            href="https://drive.google.com/file/d/175JSzZgC5jUCJLrp5vtB-9HxdiD_nskT/view?usp=sharing"
+            href="https://drive.google.com/file/d/1DCwsibEeTw-TkpDOon1mms89tpOrYYu_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-white text-slate-900 rounded-lg hover:bg-slate-50 transition-all border-2 border-slate-900 flex items-center gap-2 dark:bg-slate-900 dark:text-white dark:border-white dark:hover:bg-slate-800"
           >
-            <Download className="w-5 h-5" />
+            <Eye className="w-5 h-5" />
             {t('hero.cta')}
           </a>
         </div>

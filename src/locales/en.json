@@ -10,7 +10,7 @@
     "hero": {
         "greeting": "Hi, I'm",
         "description": "I'm a Software Engineer with a strong focus on backend and full-stack development. Skilled in creating robust, efficient systems using modern tech stacks.",
-        "cta": "Download CV"
+        "cta": "View CV"
     },
     "experience": {
         "subtitle": "Work Experience",
@@ -21,7 +21,13 @@
                 "company": "TIPSI",
                 "period": "Apr 2026 - Present",
                 "description": "Tipping by credit card. Tipsi makes it easy to collect and manage tips on your payment terminal.",
-                "achievements": []
+                "achievements": [
+                    "Designed and developed a distributed Scheduler Service for orchestrating asynchronous processing across microservices with Java, Quarkus, PostgreSQL and GCP, ensuring scalability, high availability and reliability (240K+ jobs)",
+                    "Designed and deployed an RBAC system with JWT, with Next.js and Quarkus development",
+                    "Deployed and operated microservices on Google Cloud Platform (GCP) with Terraform (Infrastructure as Code), automated deployments via GitLab CI/CD and monitored production environments",
+                    "Developed an event-driven architecture based on Google Cloud Pub/Sub for asynchronous processing and communication between microservices",
+                    "Designed a fraud detection architecture, audited REST API security and hardened microservices security"
+                ]
             },
             {
                 "title": "Full Stack Developer",
@@ -81,6 +87,11 @@
         "code": "Code",
         "demo": "Demo",
         "items": [
+            {
+                "title": "TIPSI",
+                "description": "Tipping by credit card. Tipsi makes it easy to collect and manage tips directly on your payment terminal, with a microservices architecture deployed on Google Cloud Platform.",
+                "category": "professional"
+            },
             {
                 "title": "OntoPortal",
                 "description": "OntoPortal is an open-source platform for managing and publishing semantic data and ontologies. It provides a web interface and REST APIs for storing, visualizing, and searching structured data. Supports ontology versioning, metadata management, and advanced search capabilities. Deployed in over 10 organizations across 6 countries, serving diverse domains.",

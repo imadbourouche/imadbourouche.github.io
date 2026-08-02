@@ -4,6 +4,13 @@ import { useTranslation } from 'react-i18next';
 
 const projects = [
   {
+    titleKey: 'TIPSI',
+    tags: ['Java', 'Quarkus', 'Next.js', 'PostgreSQL', 'GCP', 'Terraform'],
+    github: 'https://tipsi.io',
+    demo: '',
+    category: 'professional'
+  },
+  {
     titleKey: 'OntoPortal',
     tags: ['Ruby on Rails', 'Hotwire', 'Redis', 'NoSQL', 'Solr', 'Sidekiq'],
     github: 'https://ontoportal.org',

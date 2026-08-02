@@ -10,7 +10,7 @@
     "hero": {
         "greeting": "Bonjour, je suis",
         "description": "Je suis un Ingénieur Logiciel spécialisé en développement backend et full-stack. Expert dans la création de systèmes robustes et efficaces avec des technologies modernes.",
-        "cta": "Télécharger CV"
+        "cta": "Voir CV"
     },
     "experience": {
         "subtitle": "Expérience Professionnelle",
@@ -21,7 +21,13 @@
                 "company": "TIPSI",
                 "period": "Avr 2026 - Présent",
                 "description": "Le pourboire par carte bancaire. Tipsi permet de collecter et gérer les pourboires facilement sur votre terminal de paiement.",
-                "achievements": []
+                "achievements": [
+                    "Conception et développement d'un Scheduler Service distribué pour l'orchestration de traitements asynchrones entre microservices avec Java, Quarkus, PostgreSQL et GCP, garantissant scalabilité, haute disponibilité et fiabilité (240K+ jobs)",
+                    "Conception et déploiement d'un système RBAC avec JWT, développement Next.js et Quarkus",
+                    "Déploiement et exploitation de microservices sur Google Cloud Platform (GCP) avec Terraform (Infrastructure as Code), automatisation des déploiements via GitLab CI/CD et supervision des environnements de production",
+                    "Développement d'une architecture événementielle basée sur Google Cloud Pub/Sub pour le traitement asynchrone et la communication entre microservices",
+                    "Conception d'une architecture de détection de fraude, audit de sécurité des API REST et renforcement de la sécurité des microservices"
+                ]
             },
             {
                 "title": "Développeur Full Stack",
@@ -81,6 +87,11 @@
         "code": "Code",
         "demo": "Démo",
         "items": [
+            {
+                "title": "TIPSI",
+                "description": "Le pourboire par carte bancaire. Tipsi permet de collecter et gérer les pourboires facilement directement sur votre terminal de paiement, avec une architecture microservices déployée sur Google Cloud Platform.",
+                "category": "professional"
+            },
             {
                 "title": "OntoPortal",
                 "description": "OntoPortal est une plateforme open-source pour la gestion et la publication de données sémantiques et d'ontologies. Elle fournit une interface web et des APIs REST pour stocker, visualiser et rechercher des données structurées. Supporte le versioning d'ontologies, la gestion de métadonnées et des capacités de recherche avancées. Déployée dans plus de 10 organisations à travers 6 pays.",
